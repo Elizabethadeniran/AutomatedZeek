@@ -1,0 +1,12 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	dns
+#open	2023-08-25-20-44-09
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	trans_id	rtt	query	qclass	qclass_name	qtype	qtype_name	rcode	rcode_name	AA	TC	RD	RA	Z	answers	TTLs	rejected
+#types	time	string	addr	port	addr	port	enum	count	interval	string	count	string	count	string	count	string	bool	bool	bool	bool	count	vector[string]	vector[interval]	bool
+1666484403.827152	CjITMD2EGySfBthp42	192.168.143.1	137	192.168.143.255	137	udp	33985	-	LAPTOP-EIF5L3VU	1	C_INTERNET	32	NIMLOC	-	-	F	F	T	F	1	-	-	F
+1666484404.577283	CjITMD2EGySfBthp42	192.168.143.1	137	192.168.143.255	137	udp	33985	-	LAPTOP-EIF5L3VU	1	C_INTERNET	32	NIMLOC	-	-	F	F	T	F	1	-	-	F
+1666484405.328510	CjITMD2EGySfBthp42	192.168.143.1	137	192.168.143.255	137	udp	33985	-	LAPTOP-EIF5L3VU	1	C_INTERNET	32	NIMLOC	-	-	F	F	T	F	1	-	-	F
+#close	2023-08-25-20-44-20
