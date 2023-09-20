@@ -17,7 +17,7 @@ PacketWarden is an interactive terminal application that accepts user inputs as 
 
 - install required packages (libraries)
     sample command pip3 install requests
-    paxkage list include :
+    package list include :
 
     - requests
     - flask
@@ -84,7 +84,7 @@ note for better experince run all simulators in seperate terminal windows as out
 
 - once the dns server is running, open new terminal, navigate to simulators directory and run the command ```bash chmod +x dns.sh``` to make the script an executable
 
-- now run the script ```bash dns.sh``` to start the dns lookpup. this essentially sends a dns request with randomly select subdomain string for "packetwarden.<suspicious tld here>" @127.0.0.1 using the "dig" command
+- now run the script ```sudo dns.sh``` to start the dns lookpup. this essentially sends a dns request with randomly select subdomain string for "packetwarden.<suspicious tld here>" @127.0.0.1 using the "dig" command
 
 DNS COMMANDS
 
