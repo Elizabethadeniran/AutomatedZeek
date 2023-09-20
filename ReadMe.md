@@ -5,15 +5,15 @@ PacketWarden is an interactive terminal application that accepts user inputs as 
 - navigate to the project folder(root directory)
 
 - initialize a virtual environment:
-  ```bash  python -m venv env```  
+  ```sudo  python -m venv env```  
 
 - navigate to the bin directory within the env folder created
   for Windows : ```cmd cd env\Scripts```
-  for Linux/Mac : ```bash cd env/bin```
+  for Linux/Mac : ```sudo cd env/bin```
 
 - activate the virtual environment
   for Windows :  ```cmd activate```
-  for Linux/Mac : ```bash source activate```
+  for Linux/Mac : ```sudo source activate```
 
 - install required packages (libraries)
     sample command pip3 install requests
@@ -23,12 +23,12 @@ PacketWarden is an interactive terminal application that accepts user inputs as 
     - flask
     - pynmap
     - tqdm
-    - 
+      
 
 
 ## Running the Script
 the script warden.py is the main zeek rule generating script. run the script using the command :
-```bash python warden.py``` from the terminal.
+```sudo python warden.py``` from the terminal.
 
 once started, you will need to provide answers to some network monitoring configuration prompts and then appropriate zeek rules will be written to a file warden.zeek within the zeek_scripts directory
 
@@ -41,13 +41,13 @@ once started, you will need to provide answers to some network monitoring config
 
 - in the same terminal window navigate into /opt/zeek/etc
 
-- run the command ```bash nano node.cfg```
+- run the command ```sudo nano node.cfg```
 
 - look for a line with type=standalone directly below [zeek]. if the value is cluster, change to standalone
 
 - ctrl+ O save, Hit Enter to confirm and ctrl + x to exit
 
-- run the command ```bash nano zeekctl.cfg```
+- run the command ```sudo nano zeekctl.cfg```
 
 - look for the line with SitePolicyScripts = local.zeek
 
@@ -55,12 +55,12 @@ once started, you will need to provide answers to some network monitoring config
 
 - ctrl+ O save, Hit Enter to confirm and ctrl + x to exit
 
-- navigate back to home ```bash cd ~```
+- navigate back to home ```sudo cd ~```
 
 
 - run the following commands
-  - ```bash zeek install``` to activate the changes made
-  - ```bash zeek start``` to start zeek engine
+  - ```sudo zeek install``` to activate the changes made
+  - ```sudo zeek start``` to start zeek engine
 
 
 ## run network simulators
